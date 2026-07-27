@@ -173,13 +173,13 @@ ul{
 
 @keyframes bottle{
     0%{
-        transform: translateY(0) rotate(7deg);
+        margin-top:0;
     }
     50%{
-        transform: translateY(-25px) rotate(7deg);
+        margin-top:-25px;
     }
     100%{
-        transform: translateY(0) rotate(7deg);
+        margin-top:0;
     }
 }
 
@@ -605,10 +605,10 @@ ul{
     }
 
 .bottle{
-    width: 10rem;
-    left: 50%;
-    top: 22%;
-    transform: translateX(-50%) rotate(7deg);
+    width:10rem;
+    left:50%;
+    top:22%;
+    transform:translateX(-50%) rotate(7deg);
 }
 
     .pineapple{
@@ -669,7 +669,7 @@ ul{
 
     .butterfly2{
         width:9rem;
-        left:1%;
+        left:25%;
         bottom: -70px;
     }
 
