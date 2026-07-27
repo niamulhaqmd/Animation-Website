@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: rgb(8, 3, 1);
+}
+
+/* Start Nav Section */
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1000;
+}
+
+#nav-icon{
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+nav img{
+    width: 80px;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.heading{
+    color: #F5E4C7;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bolder;
+}
+
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 0px 150px;
+
+}
+
+.ic{
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+
+.ic:hover{
+    transform: scale(1.1);
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+
+.btn{
+    background-color: white;
+    color: rgb(8, 3, 1);
+    font-size: 25px;
+    padding: 11px 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    position: absolute;
+    transition: all .3s ease-out;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Start Hero Section */
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle{
+    height: 16rem;
+    width: 16rem;
+    background-color: #BE8D3F;
+    border-radius: 100%;
+    position: absolute;
+
+
+
+
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes circle{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+.bottle{
+    width: 15rem;
+    position: absolute;
+    transform: rotate(7deg);
+
+
+    animation-name: bottle;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bottle{
+    0%{
+        transform: translateY(0) rotate(7deg);
+    }
+    50%{
+        transform: translateY(-25px) rotate(7deg);
+    }
+    100%{
+        transform: translateY(0) rotate(7deg);
+    }
+}
+
+
+
+.pineapple{
+    width: 11rem;
+    position: absolute;
+    right: 32%;
+    bottom: 60%;
+
+
+    animation-name: pineapple;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes pineapple{
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+    50%{
+        transform: translateY(-25px) rotate(-15deg);
+    }
+    100%{
+        transform: translateY(0) rotate(0);
+    }
+}
+
+
+
+.butterfly{
+    width: 17rem;
+    position: absolute;
+    bottom: 14%;
+    right: 48%;
+}
+
+
+
+
+/* Start Animated Card Section */
+
+
+
+.card-container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card-content{
+    background-color: #BE8D3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 95vh;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.card-content h1{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: all .4s ease-in;
+    position: absolute;
+    bottom: 80%;
+}
+
+
+.card-content h2{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0;
+    transition: all .4s ease-in;
+    transform: translateY(20px);
+    position: absolute;
+    bottom: 70%;
+}
+
+
+.image-content{
+    width:100%;
+    height:260px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.bottle2{
+    width:10rem;
+    position:relative;
+    z-index:2;
+    transform:rotate(8deg);
+    top:60px;
+}
+
+.bottle2{
+    animation-name:bottle2;
+    animation-duration:5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+
+@keyframes bottle2{
+
+    0%{
+        transform:translateY(0) rotate(8deg);
+    }
+
+    50%{
+        transform:translateY(-20px) rotate(8deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(8deg);
+    }
+
+}
+
+
+.card-content:hover .bottle2{
+    transform:translateY(-10px) rotate(8deg);
+}
+
+
+.pineapple2{
+
+    width:7rem;
+    position:absolute;
+    right:20%;
+    top:25%;
+    opacity:1;
+
+    animation-name:pineapple2;
+    animation-duration:6s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+
+    transition:.3s ease;
+
+}
+
+@keyframes pineapple2{
+
+    0%{
+        transform:translateY(0) rotate(0);
+    }
+
+    50%{
+        transform:translateY(-20px) rotate(-15deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(0);
+    }
+
+}
+
+
+
+.card-content:hover .pineapple2{
+
+    opacity:1;
+
+}
+
+.butterfly2{
+
+    width:11rem;
+    position:absolute;
+    left:15%;
+    bottom:-120px;
+    z-index:5;
+
+
+    animation-name:butterfly2;
+    animation-duration:5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+
+}
+
+@keyframes butterfly2{
+
+    0%{
+        transform:translateY(0);
+    }
+
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+
+.btnn{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 1%;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+
+.card-content:hover .btnn{
+    opacity: 1;
+}
+
+
+
+
+.btn1{
+    display: flex;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 25px 30px;
+    gap: 17px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+.bt2{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+.card-content:hover h1{
+    font-size: 30px;
+    line-height: normal;
+}
+
+
+.card-content:hover h2{
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+
+
+
+
+/* Responsive  */
+
+/* ========================================= */
+/* Tablet Responsive */
+/* ========================================= */
+
+@media (max-width:1024px){
+
+    nav{
+        padding:20px 50px;
+    }
+
+    nav img{
+        width:70px;
+    }
+
+    ul{
+        font-size:20px;
+        gap:15px;
+    }
+
+    .heading{
+        font-size:55px;
+        line-height:60px;
+    }
+
+    .icons{
+        padding:0 50px;
+    }
+
+    .ic{
+        width:4rem;
+        height:4rem;
+    }
+
+    .btn{
+        font-size:20px;
+        padding:10px 30px;
+    }
+
+    .circle{
+        width:14rem;
+        height:14rem;
+    }
+
+    .bottle{
+        width:13rem;
+    }
+
+    .pineapple{
+        width:9rem;
+        right:25%;
+    }
+
+    .butterfly{
+        width:14rem;
+    }
+
+    .card-container{
+        grid-template-columns:repeat(2,1fr);
+        height:auto;
+        gap:20px;
+        padding:20px;
+    }
+
+    .card-content{
+        height:100vh;
+    }
+
+}
+
+
+
+/* ========================================= */
+/* Mobile Responsive */
+/* ========================================= */
+
+@media (max-width:768px){
+
+    nav{
+        padding:20px;
+    }
+
+    #nav-icon{
+        display:block;
+        font-size:35px;
+    }
+
+#nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    position: absolute;
+    top: 100%;
+    left: -270px;
+
+    width: 260px;
+    height: auto;
+
+    background: #1b1207;
+    padding: 20px 0;
+
+    transition: left .4s ease;
+}
+    #nav-menu.show{
+        left:0;
+    }
+
+    nav ul{
+        font-size:22px;
+    }
+
+    .heading{
+        font-size:38px;
+        line-height:45px;
+        padding:0 15px;
+    }
+
+    .icons{
+        padding:0 20px;
+    }
+
+    .ic{
+        width:3.5rem;
+        height:3.5rem;
+    }
+
+    .btn{
+        font-size:18px;
+        padding:10px 28px;
+    }
+
+    .circle{
+        width:12rem;
+        height:12rem;
+    }
+
+    .bottle{
+    width: 10rem;
+    }
+
+    .pineapple{
+    width: 6rem;
+    right: 28%;
+    bottom: 58%;
+    }
+
+    .butterfly{
+    width: 8rem;
+    right: 42%;
+    bottom: 22%;
+    }
+
+    .card-container{
+        grid-template-columns:1fr;
+        height:auto;
+        gap:20px;
+        padding:20px;
+    }
+
+    .card-content{
+        height:100vh;
+    }
+
+    .card-content h1{
+        font-size:32px;
+    }
+
+    .card-content h2{
+        font-size:18px;
+    }
+
+    .btnn{
+        flex-direction:column;
+        width:90%;
+    }
+
+    .btn1{
+        justify-content:space-between;
+        padding:18px 20px;
+    }
+
+    .bottle2{
+        width:8rem;
+    }
+
+    .pineapple2{
+        width:6rem;
+    }
+
+    .butterfly2{
+        width:9rem;
+        left:10%;
+    }
+
+}
