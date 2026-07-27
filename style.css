@@ -604,12 +604,11 @@ ul{
         height:12rem;
     }
 
-  .bottle{
+.bottle{
     width: 10rem;
-    right: 34%;
+    left: 50%;
     top: 22%;
-    transform: translate(-50%,-50%) rotate(7deg);
-
+    transform: translateX(-50%) rotate(7deg);
 }
 
     .pineapple{
@@ -670,7 +669,7 @@ ul{
 
     .butterfly2{
         width:9rem;
-        left:10%;
+        left:1%;
         bottom: -70px;
     }
 
