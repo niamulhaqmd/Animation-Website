@@ -296,7 +296,7 @@ ul{
     position:relative;
     z-index:2;
     transform:rotate(8deg);
-    top:60px;
+    top:75px;
 }
 
 .bottle2{
@@ -376,7 +376,7 @@ ul{
 
     width:11rem;
     position:absolute;
-    left:15%;
+    left:20%;
     bottom:-120px;
     z-index:5;
 
@@ -580,9 +580,9 @@ ul{
     }
 
     .heading{
-        font-size:38px;
-        line-height:45px;
-        padding:0 15px;
+        font-size:34px;
+        line-height:40px;
+        margin-bottom: 20px;
     }
 
     .icons{
@@ -604,22 +604,29 @@ ul{
         height:12rem;
     }
 
-    .bottle{
+  .bottle{
     width: 10rem;
-    }
+    right: 34%;
+    top: 22%;
+    transform: translate(-50%,-50%) rotate(7deg);
+
+}
 
     .pineapple{
     width: 6rem;
-    right: 18%;git add .
+    right: 18%;
     bottom: 58%;
     }
 
     .butterfly{
     width: 8rem;
-    right: 42%;
+    right: 48%;
     bottom: 22%;
     }
 
+    .btn{
+    bottom: 60px;
+}
     .card-container{
         grid-template-columns:1fr;
         height:auto;
@@ -637,8 +644,12 @@ ul{
 
     .card-content h2{
         font-size:18px;
+        bottom: 70%;
     }
 
+    .container{
+    height: 90vh;
+}
     .btnn{
         flex-direction:column;
         width:90%;
@@ -660,6 +671,7 @@ ul{
     .butterfly2{
         width:9rem;
         left:10%;
+        bottom: -70px;
     }
 
 }
